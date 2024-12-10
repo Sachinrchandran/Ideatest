@@ -6,68 +6,112 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            max-width: 800px;
+            max-width: 900px;
             margin: 0 auto;
             padding: 20px;
             line-height: 1.6;
-            background-color: #f4f4f4;
+            background-color: #f4f4f9;
         }
         header {
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
+            border-radius: 5px;
         }
         nav {
-            background-color: #444;
+            background-color: #34495e;
             padding: 1rem;
             text-align: center;
+            border-radius: 5px;
+            margin: 15px 0;
         }
         nav a {
             color: white;
             text-decoration: none;
             margin: 0 15px;
+            transition: color 0.3s ease;
+        }
+        nav a:hover {
+            color: #3498db;
         }
         main {
             background-color: white;
-            padding: 20px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+        .team-grid {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .team-member {
+            text-align: center;
+            width: 200px;
         }
         footer {
             text-align: center;
             padding: 1rem;
-            background-color: #333;
+            background-color: #2c3e50;
             color: white;
+            border-radius: 5px;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ideatrix Project</h1>
+        <h1>Ideatrix: Transforming Ideas into Reality</h1>
+        <p>Empowering Innovation Through Collaborative Technology</p>
     </header>
     
     <nav>
         <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Projects</a>
+        <a href="#">Team</a>
         <a href="#">Contact</a>
     </nav>
     
     <main>
-        <h2>Welcome to Ideatrix</h2>
-        <p>Ideatrix is an innovative platform dedicated to fostering creativity and collaboration. Our mission is to provide tools and resources that help individuals and teams transform ideas into reality.</p>
-        
-        <h3>Our Goals</h3>
-        <ul>
-            <li>Promote creative thinking</li>
-            <li>Facilitate project collaboration</li>
-            <li>Provide innovative development tools</li>
-        </ul>
+        <section>
+            <h2>Our Mission</h2>
+            <p>Ideatrix is dedicated to creating a dynamic ecosystem where creativity meets technology. We believe in the power of collaborative innovation to solve complex challenges and drive meaningful progress.</p>
+        </section>
+
+        <section>
+            <h2>Key Objectives</h2>
+            <ul>
+                <li>Foster collaborative problem-solving</li>
+                <li>Develop cutting-edge technological solutions</li>
+                <li>Support emerging innovators and entrepreneurs</li>
+                <li>Create platforms for knowledge sharing</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Our Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <h3>Jane Doe</h3>
+                    <p>Founder & CEO</p>
+                </div>
+                <div class="team-member">
+                    <h3>John Smith</h3>
+                    <p>CTO</p>
+                </div>
+                <div class="team-member">
+                    <h3>Emily Chen</h3>
+                    <p>Head of Product</p>
+                </div>
+            </div>
+        </section>
     </main>
     
     <footer>
-        <p>© 2024 Ideatrix Project. All rights reserved.</p>
-        <p>Contact: info@ideatrix.com</p>
+        <p>© 2024 Ideatrix Project. Innovating Together.</p>
+        <p>Contact: info@ideatrix.com | +1 (555) 123-4567</p>
     </footer>
 </body>
 </html>
