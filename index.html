@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ideatrix Project</title>
     <style>
         body {
@@ -41,15 +42,6 @@
             box-shadow: 0 0 15px rgba(0,0,0,0.1);
             border-radius: 5px;
         }
-        .team-grid {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-        .team-member {
-            text-align: center;
-            width: 200px;
-        }
         footer {
             text-align: center;
             padding: 1rem;
@@ -58,11 +50,38 @@
             border-radius: 5px;
             margin-top: 20px;
         }
+        .agent-container {
+            margin-top: 30px;
+        }
+        .agent-dropdown, .agent-task {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .agent-btn {
+            padding: 10px 20px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .agent-btn:hover {
+            background-color: #2980b9;
+        }
+        .result-box {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #ecf0f1;
+            border: 1px solid #bdc3c7;
+            border-radius: 5px;
+            min-height: 100px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Ideatrix: Transforming Ideas into Reality</h1>
+        <h1>Ideatrix Project</h1>
         <p>Empowering Innovation Through Collaborative Technology</p>
     </header>
     
@@ -75,43 +94,50 @@
     </nav>
     
     <main>
-        <section>
-            <h2>Our Mission</h2>
-            <p>Ideatrix is dedicated to creating a dynamic ecosystem where creativity meets technology. We believe in the power of collaborative innovation to solve complex challenges and drive meaningful progress.</p>
-        </section>
+        <h2>Welcome to Ideatrix</h2>
+        <p>Ideatrix is an innovative platform dedicated to fostering creativity and collaboration. Our mission is to provide tools and resources that help individuals and teams transform ideas into reality.</p>
 
-        <section>
-            <h2>Key Objectives</h2>
-            <ul>
-                <li>Foster collaborative problem-solving</li>
-                <li>Develop cutting-edge technological solutions</li>
-                <li>Support emerging innovators and entrepreneurs</li>
-                <li>Create platforms for knowledge sharing</li>
-            </ul>
-        </section>
+        <section class="agent-container">
+            <h3>AI Agents</h3>
+            <p>Choose an agent to assign a task:</p>
+            
+            <select class="agent-dropdown" id="agentSelect">
+                <option value="agent1">Content Creator Agent</option>
+                <option value="agent2">Data Analysis Agent</option>
+                <option value="agent3">Design Assistant Agent</option>
+            </select>
+            
+            <textarea class="agent-task" id="taskInput" placeholder="Describe the task for the agent..."></textarea>
+            
+            <button class="agent-btn" id="assignTaskBtn">Assign Task to Agent</button>
 
-        <section>
-            <h2>Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <h3>Jane Doe</h3>
-                    <p>Founder & CEO</p>
-                </div>
-                <div class="team-member">
-                    <h3>John Smith</h3>
-                    <p>CTO</p>
-                </div>
-                <div class="team-member">
-                    <h3>Emily Chen</h3>
-                    <p>Head of Product</p>
-                </div>
+            <div class="result-box" id="agentResult">
+                <p>Agent's response will appear here.</p>
             </div>
         </section>
     </main>
     
     <footer>
-        <p>© 2024 Ideatrix Project. Innovating Together.</p>
-        <p>Contact: info@ideatrix.com | +1 (555) 123-4567</p>
+        <p>© 2024 Ideatrix Project. All rights reserved.</p>
     </footer>
+
+    <script>
+        document.getElementById('assignTaskBtn').addEventListener('click', function() {
+            const agent = document.getElementById('agentSelect').value;
+            const task = document.getElementById('taskInput').value;
+            const resultBox = document.getElementById('agentResult');
+
+            if (!task) {
+                resultBox.innerHTML = "<p>Please enter a task for the agent.</p>";
+                return;
+            }
+
+            // Simulate the task handling process
+            resultBox.innerHTML = `<p>Assigning the task to ${agent}...</p>`;
+            setTimeout(() => {
+                resultBox.innerHTML = `<p>${agent} has completed the task: ${task}</p>`;
+            }, 2000);
+        });
+    </script>
 </body>
 </html>
