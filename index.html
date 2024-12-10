@@ -10,7 +10,7 @@
 <body>
     <header>
         <h1>Ideatrix Project</h1>
-        <h1>Ideatrix: Transforming Ideas into Reality</h1>
+        <h2>Ideatrix: Transforming Ideas into Reality</h2>
         <p>Empowering Innovation Through Collaborative Technology</p>
     </header>
     
@@ -48,31 +48,12 @@
             </ul>
         </section>
 
-        <section id="agent-contentbot">
-            <h2>Ideatrix ContentBot</h2>
-            <p>Generate creative content ideas and outlines effortlessly. Enter a topic below to get started!</p>
-            <form id="contentbot-form">
-                <label for="topic-input">Enter a Topic:</label><br>
-                <input type="text" id="topic-input" placeholder="e.g., AI in Education" required><br><br>
-                <button type="submit">Generate Ideas</button>
-            </form>
-            <div id="contentbot-output"></div>
-        </section>
-
         <section>
             <h2>Our Team</h2>
             <div class="team-grid">
                 <div class="team-member">
-                    <h3>Jane Doe</h3>
+                    <h3>Introvert_filmmaker</h3>
                     <p>Founder & CEO</p>
-                </div>
-                <div class="team-member">
-                    <h3>John Smith</h3>
-                    <p>CTO</p>
-                </div>
-                <div class="team-member">
-                    <h3>Emily Chen</h3>
-                    <p>Head of Product</p>
                 </div>
                 <div class="team-member">
                     <h3>HKMC</h3>
@@ -80,16 +61,57 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <h2>Idea Generation</h2>
+            <form id="idea-form">
+                <label for="genre">Genre:</label>
+                <input type="text" id="genre" required>
+
+                <label for="tone">Tone:</label>
+                <input type="text" id="tone" required>
+
+                <label for="setting">Setting:</label>
+                <input type="text" id="setting" required>
+
+                <button type="submit">Generate Idea</button>
+            </form>
+            <div id="idea-output"></div>
+        </section>
+
+        <section>
+            <h2>Three Act Structure</h2>
+            <form id="three-act-form">
+                <label for="story-idea">Story Idea:</label>
+                <input type="text" id="story-idea" required>
+
+                <button type="submit">Generate Structure</button>
+            </form>
+            <div id="three-act-output"></div>
+        </section>
+
+        <section>
+            <h2>Scene & Dialogue Generation</h2>
+            <form id="scene-form">
+                <label for="character">Character:</label>
+                <input type="text" id="character" required>
+
+                <label for="scenario">Scenario:</label>
+                <input type="text" id="scenario" required>
+
+                <label for="emotion">Emotion:</label>
+                <input type="text" id="emotion" required>
+
+                <button type="submit">Generate Scene</button>
+            </form>
+            <div id="scene-output"></div>
+        </section>
     </main>
-    
+
     <footer>
-        <p>© 2024 Ideatrix Project. All rights reserved.</p>
-        <p>Contact: info@ideatrix.com</p>
-        <p>© 2024 Ideatrix Project. Innovating Together.</p>
-        <p>Contact: info@ideatrix.com | +1 (555) 123-4567</p>
+        <p>&copy; 2024 Ideatrix. All Rights Reserved.</p>
     </footer>
 
-    <!-- Link to JavaScript file -->
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

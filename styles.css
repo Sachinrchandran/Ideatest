@@ -19,6 +19,21 @@ header {
     text-align: center;
 }
 
+nav {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333;
+}
+
+nav a:hover {
+    color: #007BFF;
+}
+
 main {
     padding: 20px;
 }
@@ -67,4 +82,29 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
+}
+
+/* Team Section Styles */
+.team-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.team-member {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.team-member h3 {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.team-member p {
+    color: #777;
+    font-size: 1em;
 }
