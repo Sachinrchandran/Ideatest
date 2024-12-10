@@ -10,15 +10,55 @@
             margin: 0 auto;
             padding: 20px;
             background-color: #f4f4f4;
+            line-height: 1.6;
         }
         h1 {
             color: #333;
             text-align: center;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+        nav {
+            background-color: #e0e0e0;
+            padding: 10px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        nav a {
+            margin: 0 10px;
+            color: #333;
+            text-decoration: none;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+            padding: 10px;
         }
     </style>
 </head>
 <body>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
     <h1>Welcome to Ideatest</h1>
-    <p>This is a simple test page for our new repository.</p>
+    
+    <section id="home">
+        <h2>Project Overview</h2>
+        <p>This repository is a test project for exploring web development basics. It serves as a sandbox for learning and experimenting with HTML, CSS, and GitHub workflows.</p>
+    </section>
+
+    <section id="about">
+        <h2>About This Project</h2>
+        <p>Created as part of a learning exercise, this project demonstrates basic web page structure, styling, and GitHub repository management.</p>
+    </section>
+
+    <footer id="contact">
+        <p>Contact: example@email.com | GitHub: @Sachinrchandran</p>
+    </footer>
 </body>
 </html>
